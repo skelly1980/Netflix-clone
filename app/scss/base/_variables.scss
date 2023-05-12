@@ -1,0 +1,189 @@
+@use "sass:string";
+
+$border-radius: 5px;
+
+$radius-sizes: (
+    "5": $border-radius * 1,
+    "10": $border-radius * 2,
+    "15": $border-radius * 3,
+    "20": $border-radius * 4,
+    "25": $border-radius * 5
+);
+
+@each $key,
+$val in $radius-sizes {
+    .border-radius-#{$key} {
+        border-radius: $val;
+    }
+}
+
+$base-size: 1em;
+
+$sizes: (
+    "size-1": $base-size * 0.25,
+    "size-2": $base-size * 0.5,
+    "size-3": $base-size * 0.75,
+    "size-4": $base-size * 1,
+    "size-5": $base-size * 1.5,
+    "size-6": $base-size * 2,
+    "size-7": $base-size * 2.5,
+    "size-8": $base-size * 3,
+);
+
+$sides: inline, inline-start, inline-end, block, block-start, block-end, top, bottom, left, right;
+
+@each $size-number,
+$size-value in $sizes {
+    $number: string.slice($size-number, 6);
+
+    .padding {
+        &-#{$number} {
+            padding: $size-value;
+        }
+
+        @each $side in $sides {
+            &-#{$side}-#{$number} {
+                padding-#{$side}: $size-value;
+            }
+        }
+    }
+
+    .margin {
+        &-#{$number} {
+            margin: $size-value;
+        }
+
+        @each $side in $sides {
+            &-#{$side}-#{$number} {
+                margin-#{$side}: $size-value;
+            }
+        }
+    }
+}
+
+$grid-gap: 1rem;
+
+$gap-sizes: (
+    "xs": $grid-gap * 0.5,
+    "sm": $grid-gap * 1,
+    "md": $grid-gap * 1.5,
+    "lg": $grid-gap * 2,
+    "xl": $grid-gap * 2.5,
+    "xxl": $grid-gap * 3,
+);
+
+@each $key,
+$val in $gap-sizes {
+    .grid-gap-#{$key} {
+        gap: $val;
+    }
+}
+
+$justify-between: space-between;
+$justify-around: space-around;
+$justify-evenly: space-evenly;
+$justify-center: center;
+$justify-flex-start: flex-start;
+$justify-flex-end: flex-end;
+
+$justify: (
+    "between": $justify-between,
+    "around": $justify-around,
+    "evenly": $justify-evenly,
+    "center": $justify-center,
+    "flex-start": $justify-flex-start,
+    "flex-end": $justify-flex-end
+);
+
+@each $key,
+$val in $justify {
+    .justify-#{$key} {
+        justify-content: $val;
+    }
+}
+
+$align-center: center;
+$align-flex-start: flex-start;
+$align-flex-end: flex-end;
+$align-stretch: stretch;
+$align-baseline: baseline;
+
+$align: (
+    "center": $align-center,
+    "flex-start": $align-flex-start,
+    "flex-end": $align-flex-end,
+    "stretch": $align-stretch,
+    "baseline": $align-baseline
+);
+
+@each $key,
+$val in $align {
+    .align-#{$key} {
+        align-items: $val;
+    }
+}
+
+$align-content-between: space-between;
+$align-content-around: space-around;
+$align-content-stretch: stretch;
+$align-content-center: center;
+$align-content-start: flex-start;
+$align-content-end: flex-end;
+
+
+$align-content: (
+    "space-between": $align-content-between,
+    "space-around": $align-content-around,
+    "stretch": $align-content-stretch,
+    "center": $align-content-center,
+    "flex-start": $align-content-start,
+    "flex-end": $align-content-end
+);
+
+@each $key,
+$val in $align-content {
+    .align-content-#{$key} {
+        align-content: $val;
+    }
+}
+
+$place-baseline: baseline;
+$place-center: center;
+$place-end: end;
+$place-start: start;
+$place-stretch: stretch;
+
+$place-items: (
+    "baseline": $place-baseline,
+    "center": $place-center,
+    "end": $place-end,
+    "start": $place-start,
+    "stretch": $place-stretch
+);
+
+@each $key,
+$val in $place-items {
+    .place-#{$key} {
+        place-items: $val;
+    }
+}
+
+$place-content: (
+    "baseline": $place-baseline,
+    "center": $place-center,
+    "end": $place-end,
+    "start": $place-start,
+    "stretch": $place-stretch
+);
+
+@each $key,
+$val in $place-content {
+    .content-#{$key} {
+        place-content: $val;
+    }
+}
+
+
+.border {
+    border-bottom: 10px solid #fff;
+}

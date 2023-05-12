@@ -1,0 +1,11 @@
+@mixin grid($columns) {
+    display: grid;
+    grid-template-columns: $columns;
+}
+
+@mixin container($width, $max-width, $overflow, $margin) {
+    width: $width;
+    max-width: $max-width;
+    overflow: $overflow;
+    margin: $margin;
+}

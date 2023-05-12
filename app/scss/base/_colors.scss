@@ -1,0 +1,83 @@
+$header-background: #4d004d;
+$tab-background: hsl(0, 100%, 30%);
+$contact-background-color: #ff9933;
+$bg-white: #ffffff;
+$bg-black: #000000;
+$mobile-menu-background: rgba(0, 0, 0, 0.7);
+
+$varColors: (
+    "purple": $header-background,
+    "red": $tab-background,
+    "orange": $contact-background-color,
+    "white": $bg-white,
+    "black": $bg-black,
+);
+
+@each $key,
+$val in $varColors {
+    .var-color-#{$key} {
+        background-color: $val;
+    }
+
+    @for $i from 1 through 9 {
+        .var-color-#{$key}-light-#{$i} {
+            background-color: mix(white, $val, $i * 10%)
+        }
+
+        .var-color-#{$key}-dark-#{$i} {
+            background-color: mix(black, $val, $i * 10%)
+        }
+    }
+}
+
+
+$colors: (
+    "white": #ffffff,
+    "black": #000000,
+    "blue": #0000ff,
+    "green": #008000,
+    "yellow": #ffff00,
+    "pink": #ffc0cb,
+    "orange": #ffa500,
+    "purple": #800080,
+    "red": #ff0000
+);
+
+@each $key,
+$val in $colors {
+    .bg-#{$key} {
+        background-color: $val
+    }
+
+    @for $i from 1 through 9 {
+        .bg-#{$key}-light-#{$i} {
+            background-color: mix(white, $val, $i * 10%)
+        }
+
+        .bg-#{$key}-dark-#{$i} {
+            background-color: mix(black, $val, $i * 10%)
+        }
+    }
+}
+
+@each $key,
+$val in $colors {
+    .border-#{$key} {
+        border: 2px solid $val;
+    }
+
+    @for $i from 1 through 9 {
+        .border-#{$key}-light-#{$i} {
+            border: 2px solid mix(white, $val, $i * 10%)
+        }
+
+        .border-#{$key}-dark-#{$i} {
+            border: 2px solid mix(black, $val, $i * 10%)
+        }
+    }
+}
+
+.bg-gradient {
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+}

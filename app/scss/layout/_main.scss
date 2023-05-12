@@ -1,0 +1,22 @@
+main {
+    .enjoy .container .grid-2 .row-1 p {
+        max-width: 35ch;
+    }
+
+    .enjoy .container .grid-2 .row-2 picture {
+        position: relative;
+        z-index: 10;
+
+        video {
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            max-width: 73%;
+            max-height: 54%;
+            top: 80px;
+            right: 75px;
+            z-index: -1;
+        }
+    }
+}
