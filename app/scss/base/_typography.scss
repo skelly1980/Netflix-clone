@@ -1,7 +1,12 @@
+// Individual styles
 $text-white: #ffffff;
 $text-black: #333;
 
+.text-blue {
+    color: #0071eb;
+}
 
+// Loop styles
 $base-font-size: 1em;
 
 $font-size: (
@@ -108,8 +113,4 @@ $val in $line-heights {
     .line-height-#{$key} {
         line-height: $val;
     }
-}
-
-.underline {
-    text-decoration: underline;
 }

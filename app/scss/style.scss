@@ -1,10 +1,11 @@
 @import 'base/animations';
+@import 'base/mixins';
 @import 'base/reset';
 @import 'base/typography';
-@import 'base/mixins';
 @import 'base/variables';
 @import 'base/colors';
 @import 'base/breakpoints';
+@import 'base/utilities';
 
 @import 'components/buttons';
 @import 'components/modal';
@@ -14,5 +15,3 @@
 @import 'layout/main';
 @import 'layout/grid';
 @import 'layout/tabs';
-
-@import 'styles.scss';

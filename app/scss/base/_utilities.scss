@@ -1,0 +1,72 @@
+.d-block {
+    display: block !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.spacer>*+* {
+    padding-bottom: 1rem;
+}
+
+.accordian-bg {
+    background-color: rgba(45, 45, 45, 1)
+}
+
+.container {
+    @include container(100%, 1200px, hidden, 0 auto);
+}
+
+.hidden {
+    display: none;
+    overflow: hidden;
+}
+
+.active {
+    display: block;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bg-gradient {
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.plus-rotate {
+    transform: rotate(-45deg);
+}
+
+form {
+    display: flex;
+    flex: 1 1 auto;
+    width: 378.438px;
+}
+
+.form-container {
+    margin: 1rem auto 0;
+    width: 100%;
+    max-width: 36.625rem;
+    display: flex;
+}
+
+.cta-input {
+    width: 100%;
+    padding-block: 1.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+    background: rgba(22, 22, 22, 0.7);
+    border-color: rgba(128, 128, 128, 0.7);
+}

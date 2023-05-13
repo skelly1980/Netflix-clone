@@ -50,4 +50,25 @@ main {
             max-width: 40ch;
         }
     }
+
+    .download .container .grid-2 .row-1 {
+        position: relative;
+    }
+
+    .download .container .grid-2 .stranger {
+        position: absolute;
+        width: 60%;
+        top: 70%;
+        left: 20%;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 2em 0 rgba(0, 0, 0, 1);
+        border-radius: 0.75rem;
+        z-index: 1;
+    }
+
+    .download .container .grid-2 .row-1 .column .row-1 {
+        img {
+            height: 4.5rem;
+        }
+    }
 }

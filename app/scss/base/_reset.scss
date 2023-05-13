@@ -33,38 +33,14 @@ picture {
     height: auto;
 }
 
+p {
+    text-align: left;
+}
+
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-}
-
-.d-block {
-    display: block !important;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-direction {
-    flex-direction: column;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
-}
-
-.spacer>*+* {
-    padding-bottom: 1rem;
 }
