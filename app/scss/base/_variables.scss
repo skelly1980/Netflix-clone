@@ -1,5 +1,16 @@
 @use "sass:string";
 
+// individual classes
+.border {
+    border-bottom: 10px solid #fff;
+}
+
+.divider {
+    border-bottom: 15px solid rgb(35, 35, 35);
+}
+
+// loop classes
+
 $border-radius: 5px;
 
 $radius-sizes: (
@@ -181,9 +192,4 @@ $val in $place-content {
     .content-#{$key} {
         place-content: $val;
     }
-}
-
-
-.border {
-    border-bottom: 10px solid #fff;
 }
