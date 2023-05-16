@@ -3,9 +3,16 @@ main {
         max-width: 35ch;
     }
 
-    .enjoy .container .grid-2 .row-2 picture {
+    .enjoy .container .grid-2 .row-2 {
         position: relative;
         z-index: 10;
+    }
+
+    .enjoy .container .grid-2 .row-2 picture {
+
+        img {
+            width: 100%;
+        }
 
         video {
             position: absolute;
@@ -14,30 +21,33 @@ main {
             height: 100%;
             max-width: 73%;
             max-height: 54%;
-            top: 80px;
-            right: 75px;
+            top: 20%;
+            left: 15%;
             z-index: -1;
         }
     }
 
     .everywhere .container .row-1 {
-        picture {
-            position: relative;
-            z-index: 10;
+        position: relative;
+        z-index: 10;
 
-            video {
-                position: absolute;
-                z-index: -1;
-                overflow: hidden;
-                width: 100%;
-                height: 100%;
-                max-width: 63%;
-                max-height: 47%;
-                top: 50px;
-                left: 100px;
-            }
+        img {
+            width: 100%;
+        }
+
+        video {
+            position: absolute;
+            z-index: -1;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            max-width: 63%;
+            max-height: 47%;
+            top: 10%;
+            left: 18%;
         }
     }
+
 
     .everywhere .container .row-2 {
         p {
@@ -69,6 +79,44 @@ main {
     .download .container .grid-2 .row-1 .column .row-1 {
         img {
             height: 4.5rem;
+        }
+    }
+
+    @include lg {
+        .enjoy .container .grid-2 .row-1 h2 {
+            text-align: center;
+        }
+
+        .enjoy .container .grid-2 .row-1 p {
+            text-align: center;
+        }
+
+        .everywhere .container .grid-2 .row-2 h2 {
+            text-align: center;
+        }
+
+        .everywhere .container .grid-2 .row-2 p {
+            text-align: center;
+        }
+
+        .everywhere .container .grid-2 .row-1 picture video {
+            left: 80px;
+        }
+
+        .kids .container .grid-2 .row-1 h2 {
+            text-align: center;
+        }
+
+        .kids .container .grid-2 .row-1 p {
+            text-align: center;
+        }
+
+        .download .container .grid-2 .row-2 h2 {
+            text-align: center;
+        }
+
+        .download .container .grid-2 .row-2 .only {
+            text-align: center;
         }
     }
 }

@@ -48,8 +48,12 @@ picture {
     height: auto;
 }
 
-p {
-    text-align: left;
+video {
+    display: inline-block;
+    vertical-align: baseline;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 ul {
