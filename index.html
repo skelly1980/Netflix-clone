@@ -20,9 +20,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
 
 		<!-- CSS File -->
-		<link rel="stylesheet" href="dist/style.css?cb=1683840167940" />
+		<link rel="stylesheet" href="dist/style.css?cb=1684252341195" />
 		<!-- JavaScript File -->
-		<script src="dist/all.js?cb=1683840167940" defer></script>
+		<script src="dist/all.js?cb=1684252341195" defer></script>
 	</head>
 	<body>
 		<header class="header">
@@ -31,11 +31,14 @@
 					<picture>
 						<img src="app/images/logo.png" alt="Netflix Logo" height="150" width="150" />
 					</picture>
-					<nav>
-						<select name="languages" id="">
-							<option value="english">English</option>
-							<option value="spanish">Espanol</option>
-						</select>
+					<nav class="flex grid-gap-sm">
+						<div class="select flex align-center justify-center bg-black">
+							<img class="globe" src="app/images/globe.png" alt="" />
+							<select aria-labelledby="language select dropdown" name="languages" class="english bg-black text-white">
+								<option value="english">English</option>
+								<option value="spanish">Espanol</option>
+							</select>
+						</div>
 						<button role="button" class="btn-header text-white text-center text-sm">Sign In</button>
 					</nav>
 				</div>
@@ -44,8 +47,8 @@
 					<div class="container">
 						<div>
 							<h1 class="text-white text-center">Unlimited movies, TV shows, and more</h1>
-							<p class="text-white text-center padding-block-4">Watch anywhere. Cancel anytime.</p>
-							<p class="text-white text-center padding-block-4">Ready to watch? Enter your email to create or restart your membership.</p>
+							<p class="header-text-1 text-white text-center padding-block-4">Watch anywhere. Cancel anytime.</p>
+							<p class="header-text-2 text-white text-center padding-block-4">Ready to watch? Enter your email to create or restart your membership.</p>
 							<div class="form-container flex align-center justify-center grid-gap-sm">
 								<form aria-hidden="true">
 									<input autocomplete="email" minlength="5" maxlength="50" class="flex cta-input padding-4 border-radius-10" type="email" placeholder="Email address" />
@@ -63,7 +66,7 @@
 
 		<main>
 			<section class="bg-gradient">
-				<div class="container flex justify-center padding-4">
+				<div class="container popcorn flex justify-center padding-4">
 					<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100.000000pt" height="107.000000pt" viewBox="0 0 300.000000 367.000000" preserveAspectRatio="xMidYMid meet">
 						<g transform="translate(0.000000,367.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
 							<path
@@ -107,12 +110,9 @@
 						</g>
 					</svg>
 					<div class="text-white padding-4 text-left">
-						<p class="padding-bottom-2 text-md">The Netflix you love for just $6.99.</p>
-						<p class="padding-bottom-2">Get the Standard with ads plan.</p>
-						<a class="underline" href="#"
-							>Learn More<!-- <i class="fa-duotone fa-chevron-right"></i
-						>--></a
-						>
+						<p class="popcorn-p-1 padding-bottom-2 text-md">The Netflix you love for just $6.99.</p>
+						<p class="popcorn-p-2 padding-bottom-2">Get the Standard with ads plan.</p>
+						<a class="popcorn-a" href="#">Learn More </a>
 					</div>
 				</div>
 			</section>
@@ -123,7 +123,7 @@
 					<div class="grid-2 grid-1-lg">
 						<div class="row-1 text-white flex-column align-baseline justify-center padding-4">
 							<h2 class="padding-bottom-3">Enjoy on your TV</h2>
-							<p class="text-md">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+							<p class="header-text-1 text-md">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
 						</div>
 						<div class="row-2 padding-4">
 							<picture>
@@ -153,7 +153,7 @@
 						</div>
 						<div class="row-2 text-white flex-column align-flex-start justify-center padding-4">
 							<h2 class="text-left">Watch everywhere</h2>
-							<p class="text-left padding-top-3">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+							<p class="header-text-1 text-left padding-top-3">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
 						</div>
 					</div>
 				</div>
@@ -165,7 +165,7 @@
 					<div class="grid-2 grid-1-lg">
 						<div class="row-1 text-white flex-column align-flex-start justify-center padding-4">
 							<h2 class="text-left">Create profiles for kids</h2>
-							<p class="text-left padding-top-3">Send kids on adventures with their favorite characters in a space made for them-free with your membership.</p>
+							<p class="header-text-1 text-left padding-top-3">Send kids on adventures with their favorite characters in a space made for them-free with your membership.</p>
 						</div>
 						<div class="row-2 flex flex-direction align-center justify-center">
 							<picture>
@@ -198,7 +198,7 @@
 						</div>
 						<div class="row-2 flex-column align-flex-start justify-center padding-4 text-white">
 							<h2 class="text-xxl">Download your shows to watch offline.</h2>
-							<p class="only padding-top-3">Only available on ad-free plans.</p>
+							<p class="header-text-1 only padding-top-3">Only available on ad-free plans.</p>
 						</div>
 					</div>
 				</div>
@@ -211,7 +211,7 @@
 						<h2>Frequently Asked Questions</h2>
 						<div class="accordian-container flex-column grid-gap-md padding-8">
 							<button class="row accordian-bg text-white flex align-center justify-between padding-6">
-								<h3>What is Netflix?</h3>
+								<h3 class="header-text-1">What is Netflix?</h3>
 								<p class="text-xxl">+</p>
 							</button>
 							<div class="panel accordian-bg text-white hidden padding-bottom-8">
@@ -219,7 +219,7 @@
 								<p>You can watch as much as you want, whenever you want – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
 							</div>
 							<button class="row flex text-white align-center justify-between accordian-bg padding-6">
-								<h3>How much does Netflix cost?</h3>
+								<h3 class="header-text-1">How much does Netflix cost?</h3>
 								<p class="text-xxl">+</p>
 							</button>
 							<div class="panel accordian-bg text-white hidden padding-8">
@@ -229,7 +229,7 @@
 								</p>
 							</div>
 							<button class="row flex text-white align-center justify-between accordian-bg padding-6">
-								<h3>Where can I watch?</h3>
+								<h3 class="header-text-1">Where can I watch?</h3>
 								<p class="text-xxl">+</p>
 							</button>
 							<div class="panel accordian-bg text-white hidden padding-8">
@@ -243,7 +243,7 @@
 								</p>
 							</div>
 							<button class="row flex text-white align-center justify-between accordian-bg padding-6">
-								<h3>How do I cancel?</h3>
+								<h3 class="header-text-1">How do I cancel?</h3>
 								<p class="text-xxl">+</p>
 							</button>
 							<div class="panel accordian-bg text-white hidden padding-8">
@@ -253,14 +253,14 @@
 								</p>
 							</div>
 							<button class="row flex text-white align-center justify-between accordian-bg padding-6">
-								<h3>What can I watch on Netflix?</h3>
+								<h3 class="header-text-1">What can I watch on Netflix?</h3>
 								<p class="text-xxl">+</p>
 							</button>
 							<div class="panel accordian-bg text-white hidden padding-8">
 								<p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
 							</div>
 							<button class="row flex text-white align-center justify-between accordian-bg padding-6">
-								<h3>Is Netflix good for kids?</h3>
+								<h3 class="header-text-1">Is Netflix good for kids?</h3>
 								<p class="text-xxl">+</p>
 							</button>
 							<button class="panel accordian-bg text-white hidden padding-8">
@@ -317,6 +317,15 @@
 						<li class="padding-bottom-4"><a class="text-white underline" href="#">Contact Us</a></li>
 						<li class="padding-bottom-4"><a class="text-white underline" href="#">Only on Netflix</a></li>
 					</ul>
+				</div>
+				<div aria-labelledby="language select dropdown" class="select-container flex padding-block-4">
+					<div class="select flex flex-shrink bg-black">
+						<img class="globe" src="app/images/globe.png" alt="" />
+						<select name="languages" class="english bg-black text-white">
+							<option value="english">English</option>
+							<option value="spanish">Espanol</option>
+						</select>
+					</div>
 				</div>
 			</div>
 		</footer>

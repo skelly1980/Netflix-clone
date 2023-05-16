@@ -11,12 +11,38 @@
     flex-flow: row wrap;
 }
 
+.flex-shrink {
+    flex-shrink: 1;
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
 
 .spacer>*+* {
     padding-bottom: 1rem;
+}
+
+.select {
+    background-color: black;
+    color: white;
+    padding: .8rem;
+    border: 2px solid rgba(128, 128, 128, 0.675);
+    outline: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.english {
+    border: none;
+}
+
+.globe {
+    width: 1.3rem;
+    filter: invert(1);
+    margin-right: .8rem;
 }
 
 .accordian-bg {
@@ -76,4 +102,46 @@ form {
     width: 1.8rem;
     margin-left: .3rem;
     filter: invert(1);
+}
+
+.header-text-1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.header-text-2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+.popcorn-p-1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+}
+
+.popcorn-p-2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.popcorn-a {
+    cursor: pointer;
+    color: #448ef4;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    font-weight: 500;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
 }

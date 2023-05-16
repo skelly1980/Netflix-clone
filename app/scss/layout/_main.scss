@@ -83,6 +83,12 @@ main {
     }
 
     @include lg {
+        .popcorn {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
         .enjoy .container .grid-2 .row-1 h2 {
             text-align: center;
         }
@@ -115,8 +121,43 @@ main {
             text-align: center;
         }
 
+        .download .container {
+            height: 80vh;
+        }
+
         .download .container .grid-2 .row-2 .only {
             text-align: center;
+        }
+
+        .download .container .grid-2 .row-1 {
+            order: 2;
+
+            .stranger .row-1 {
+                order: 1;
+
+                img {
+                    height: 48px;
+                }
+            }
+
+            .stranger .row-2 {
+                order: 2;
+                padding-top: 0;
+
+                h3 {
+                    font-size: 14px !important;
+                }
+
+                p {
+                    font-size: 12px;
+                    padding-top: 0;
+                }
+            }
+        }
+
+        .download .container .grid-2 .row-2 {
+            order: 1;
+            padding-top: 3rem;
         }
     }
 }

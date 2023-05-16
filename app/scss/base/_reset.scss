@@ -9,6 +9,7 @@
 body {
     font-size: 16px;
     font-family: sans-serif;
+    line-height: 1.6;
 }
 
 h1,
@@ -17,13 +18,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Helvetica Nueve";
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: var(--step-5);
     font-weight: 900;
     letter-spacing: normal;
 }
@@ -54,6 +55,12 @@ video {
     object-fit: contain;
     overflow-clip-margin: content-box;
     overflow: clip;
+}
+
+select {
+    min-width: auto;
+    width: auto;
+    outline: none;
 }
 
 ul {

@@ -26,8 +26,20 @@
 }
 
 @include lg {
+    .header {
+        padding-bottom: 2rem;
+
+        .container {
+            height: 65vh;
+        }
+    }
+
     .header .container .navbar {
         padding-inline: 2rem;
+
+        nav .select {
+            display: none;
+        }
     }
 
     .form-container {
