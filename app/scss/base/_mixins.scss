@@ -3,9 +3,10 @@
     grid-template-columns: $columns;
 }
 
-@mixin container($width, $max-width, $overflow, $margin) {
+@mixin container($width, $max-width, $overflow, $margin, $padding) {
     width: $width;
     max-width: $max-width;
     overflow: $overflow;
-    margin: $margin;
+    margin-inline: $margin;
+    padding-inline: $padding
 }

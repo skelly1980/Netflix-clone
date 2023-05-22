@@ -50,7 +50,7 @@
 }
 
 .container {
-    @include container(100%, 1200px, hidden, 0 auto);
+    @include container(100%, 1200px, hidden, auto, 2rem);
 }
 
 .hidden {

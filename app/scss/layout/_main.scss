@@ -89,24 +89,24 @@ main {
             justify-content: center;
         }
 
-        .enjoy .container .grid-2 .row-1 h2 {
-            text-align: center;
+        .grid-1-lg {
+            place-items: center;
+        }
+
+        .enjoy .container .grid-2 .row-1 {
+            align-items: center;
         }
 
         .enjoy .container .grid-2 .row-1 p {
             text-align: center;
         }
 
-        .everywhere .container .grid-2 .row-2 h2 {
-            text-align: center;
+        .everywhere .container .grid-2 .row-2 {
+            align-items: center;
         }
 
         .everywhere .container .grid-2 .row-2 p {
             text-align: center;
-        }
-
-        .everywhere .container .grid-2 .row-1 picture video {
-            left: 80px;
         }
 
         .kids .container .grid-2 .row-1 h2 {
@@ -117,16 +117,16 @@ main {
             text-align: center;
         }
 
+        .download .container {
+            height: 120vh;
+        }
+
         .download .container .grid-2 .row-2 h2 {
             text-align: center;
         }
 
-        .download .container {
-            height: 80vh;
-        }
-
-        .download .container .grid-2 .row-2 .only {
-            text-align: center;
+        .download .container .grid-2 .row-2 {
+            align-items: center;
         }
 
         .download .container .grid-2 .row-1 {
