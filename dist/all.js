@@ -1,2 +1,2 @@
-var app={};
+var app={};const accordionItems=document.querySelectorAll(".accordion-item"),toggleAccordion=e=>{const t=accordionItems[e];t.classList.toggle("is-active");const c=t.querySelector(".accordion-content"),o=t.querySelector(".accordion-trigger");t.classList.contains("is-active")?(c.style.height=`${c.scrollHeight}px`,o.setAttribute("aria-expanded","true")):(c.style.height=0,o.setAttribute("aria-expanded","false"))};window.addEventListener("load",(()=>{accordionItems.forEach(((e,t)=>{e.querySelector(".accordion-trigger").addEventListener("click",(()=>toggleAccordion(t)))}))}));
 //# sourceMappingURL=all.js.map

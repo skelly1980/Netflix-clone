@@ -19,8 +19,8 @@
     text-transform: uppercase;
 }
 
-.spacer>*+* {
-    padding-bottom: 1rem;
+:where(.flow > :not(:first-child)) {
+    margin-top: 4em;
 }
 
 .select {

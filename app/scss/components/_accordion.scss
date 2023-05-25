@@ -1,0 +1,48 @@
+.accordion-container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.accordion-item {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.accordion-trigger {
+    width: 100%;
+    display: block;
+    padding: 24px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion-trigger:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.accordion-icon {
+    transition: transform 0.5s;
+}
+
+.accordion-item.is-active .accordion-icon {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.accordion-content p {
+    margin: 24px;
+}

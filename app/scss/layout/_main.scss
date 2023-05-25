@@ -82,6 +82,10 @@ main {
         }
     }
 
+    .faq .container .accordion-container .accordion-item .accordion-trigger {
+        width: 100%;
+    }
+
     @include lg {
         .popcorn {
             flex-direction: column;
